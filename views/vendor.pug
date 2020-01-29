@@ -1,0 +1,41 @@
+extends layout
+
+block content
+  div.row.main
+    div.col-lg-12.col-sm-12
+      div.bs-callout.bs-callout-info
+        h1.light #{vendor_name}
+
+        strong All agreements
+        ul
+          each doc in agreements
+            li
+              a(href=doc.PreviewUrl target='_blank') #{doc.Name}
+              //- | #{doc.Attributes['Category'].Value}
+
+
+        //- h3.light Contract Attributes
+        //- table
+        //-   tr
+        //-     td Link to Contract
+        //-     td
+        //-       a(href=preview_url, target='_blank') #{this_document.Name}
+
+        //-   tr
+        //-     td Contracting Party
+        //-     td=contract_attributes['Contracting Party'].Value
+        //-   tr
+        //-     td Contract Category
+        //-     td=contract_attributes['Category'].Value
+        //-   tr
+        //-     td Status
+        //-     td=contract_attributes['Status'].Value
+        //-   tr
+        //-     td Document Type
+        //-     td=contract_attributes['Document Type'].Value
+
+
+
+
+
+

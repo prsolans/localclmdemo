@@ -6,13 +6,19 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "box-node-sdk": "^1.29.0",
+    "@google-cloud/language": "^3.7.0",
+    "blob": "0.0.5",
+    "box-node-sdk": "^1.30.0",
     "cookie-parser": "^1.4.4",
     "dateformat": "^3.0.3",
     "debug": "~2.6.9",
     "express": "^4.17.1",
+    "form-data": "^3.0.0",
     "http-errors": "~1.6.2",
     "morgan": "~1.9.0",
-    "pug": "^2.0.4"
+    "node-fetch": "^2.6.0",
+    "pug": "^2.0.4",
+    "springcm-node-sdk": "^1.7.1",
+    "xmlhttprequest": "^1.8.0"
   }
 }

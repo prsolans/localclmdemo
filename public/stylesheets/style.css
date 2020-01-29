@@ -5,22 +5,31 @@ html, body {
 body {
   padding: .5% 0px;
   font-size: .875rem;
-  /* EDIT ME: 
+  /* EDIT ME:
   // These fields control the dark background color, the text color and the font.
-  // Change all you want. 
+  // Change all you want.
   */
   background-color: #002847;
   color: #151f26;
   font: 16px "Lato", "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+table {
+  width: 60%;
+}
+
+td {
+  width: 20%;
+  text-align: left;
+}
+
 
 footer.footer {
   height: 60px;
   padding: 15px;
-  /* EDIT ME: 
+  /* EDIT ME:
   // The background-color for the footer starts out matching the background-color of the body.
-  // Change all you want. 
+  // Change all you want.
   */
   background-color: #312281;
   color: white;
@@ -36,17 +45,17 @@ div.left-column {
 }
 
 a {
-  /* EDIT ME: 
+  /* EDIT ME:
   // The color of the links on the pages... not a big deal.
-  // Change all you want. 
+  // Change all you want.
   */
   color: #0D519E;
 }
 
 h1, h2, h3 {
-  /* EDIT ME: 
+  /* EDIT ME:
   // The color of the headlines on the pages... not a big deal.
-  // Change all you want. 
+  // Change all you want.
   */
   color: #151f26;
 }
@@ -63,7 +72,7 @@ img.center {
 
 /* LEAVE THE REST OF THIS ALONE
 // You should either leave this stuff alone,
-// or accept the consequences. 
+// or accept the consequences.
 */
 div.main {
   background-color: white;
@@ -97,7 +106,7 @@ div.header {
   div.right { padding: 1% 0; }
 }
 
-.fill { 
+.fill {
     height:94vh;
 }
 
@@ -142,7 +151,7 @@ div.row.blue {
 
 div.row.blue h2 {
   color: white;
-} 
+}
 
 
 div.left-align {

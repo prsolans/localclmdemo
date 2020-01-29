@@ -8,29 +8,29 @@ var indexRouter = require('./routes/index');
 var homeRouter = require('./routes/home');
 var inputRouter = require('./routes/input');
 var metadataRouter = require('./routes/metadata');
-// var videosRouter = require('./routes/videos');
+var vendorRouter = require('./routes/vendor');
+var allVendorsRouter = require('./routes/all_vendors');
+
+var hydraterRouter = require('./routes/hydrater');
+
+var api_testRouter = require('./routes/api/test');
+
 
 var app = express();
 
 /////////////////////
 // UPDATE HERE
-// Get Developer Token from Dev Console->App->Configuration
-// Will expire after 60 minutes
-app.locals.devToken = '0biP82c3if9pEkA50NvM9fEjUGjR74mJ';
-// Set to custom domain of your Box demo environment
-app.locals.demoDomain = 'https://prshome.app.box.com'
-// Set to root Id of the main folder you want to see on the homepage
-app.locals.rootFolder = '77254170534';
-// Set to folder you want new content uploaded directly into
-app.locals.uploadFolder = '77253195217';
-// Set to custom link of a Box Relay (for show and tell purposes)
-app.locals.boxRelayLink = 'https://prshome.app.box.com/boxrelay/edit/966448'
-// Set to custom link in your demo Salesforce environment
-app.locals.salesforceLink = 'https://prs-box-demo-dev-ed.lightning.force.com/lightning/r/Case/500f400000I902AAAR/view'
-// Set to the name you choose for your app
-app.locals.version = 'Local Box Demo';
-/////////////////////
 
+app.locals.client_id = '8c2c1048-25b6-403b-b82b-324910667375';
+app.locals.client_secret = '7e4e160011b24c348273547014a0bbff4W7LfCO5jRD2MpJsfB6UP8ReTps6yeTLgqFmbXeOVmnAm0bc4wZnTcH05hjB52ZgT5qykboAcUhkMIOetkd6vWlmzpIWHMk3';
+app.locals.auth_URL = 'https://auth.springcm.com/api/v201606/apiuser'
+// app.locals.root_folder_id = 'a8c44e6d-0036-ea11-9c2b-d89d6716196d';
+app.locals.root_folder_id = '6bb169a7-303e-ea11-9c2b-d89d6716196d'; // Ivy Tech
+app.locals.hydrater_doc_id = 'b4d8e1c5-303e-ea11-9c2b-d89d6716196d';
+
+app.locals.GOOGLE_APPLICATION_CREDENTIALS = 'CLM NLP 1-c8a4eb6906d4.json';
+
+/////////////////////
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -45,11 +45,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/home', homeRouter);
 app.use('/input', inputRouter);
+app.use('/vendor', vendorRouter);
+app.use('/vendors', allVendorsRouter);
 app.use('/metadata', metadataRouter);
-// app.use('/videos', videosRouter);
+
+app.use('/hydrater', hydraterRouter);
+
+app.use('/api/test', api_testRouter);
+
 
 app.use(function fileLog(req, res, next) {
-    console.log('fileLog');
     next();
 });
 
