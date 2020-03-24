@@ -1,0 +1,43 @@
+{
+  "name": "typescriptspringcmsdk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "Start dotnet run && npm run-script build && mocha --timeout 10000 ./wwwroot/test/testentry.js",
+    "build": "\"webpack && webpack --config webpacknode.config.js && copy .\\dist\\SpringCMSDK.bundle.js .\\wwwroot\\test\\SpringCMSDK.bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
+    "chai": "^4.2.0",
+    "enhanced-resolve": "4.1.0",
+    "mocha": "6.1.4",
+    "ts-node": "8.1.0",
+    "typescript": "^2.7.2",
+    "uglifyjs-webpack-plugin": "1.1.2",
+    "vinyl-source-stream": "1.1.0",
+    "vinyl-transform": "1.0.0",
+    "webpack": "4.32.0",
+    "webpack-cli": "3.3.2",
+    "webpack-merge": "4.2.1"
+  },
+  "dependencies": {
+    "@types/chai": "4.1.7",
+    "@types/jquery": "3.3.29",
+    "@types/mocha": "5.2.6",
+    "@types/node": "^9.4.6",
+    "@types/request-promise-native": "^1.0.13",
+    "@types/validator": "^10.11.0",
+    "awesome-typescript-loader": "3.4.1",
+    "http": "^0.0.0",
+    "maketypes": "^1.1.2",
+    "opn": "^6.0.0",
+    "promise-es6": "0.1.0",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "webpack-node-externals": "^1.6.0"
+  }
+}

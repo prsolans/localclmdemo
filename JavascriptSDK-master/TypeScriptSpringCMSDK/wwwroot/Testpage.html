@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="https://unpkg.com/mocha@4.0.1/mocha.css" rel="stylesheet" />
+    <script   src="/test/SpringCMSDK.bundle.js">
+    </script>
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="module" src="https://unpkg.com/chai@4.2.0/chai.js"></script>
+    <script src="https://unpkg.com/mocha@4.0.1/mocha.js"></script>
+    
+    
+
+
+    <script>
+        //var scm = new SpringCM.SpringCMService("619085ced8934b8bb41f7abe99b1d00fLZ5YrgpvWq1DENpFjfMZcfzJWXWqxE1YjzrMR0nVo88ch45IHqDXhexqkwCTJ88RycePfdyt21udgWlbcNjGBe0FBBlexTLp", "apiuatna11.springcm.com");
+
+        //scm.GetFolder("5644aa38-4e91-df11-9372-001cc448da6a").then((res) => {
+        //    console.log(res);
+        //    scm.GetDocumentsInFolder(res).then((res) => { console.log(res) });
+        //    scm.GetDocumentsInFolder("5644aa38-4e91-df11-9372-001cc448da6a").then((res) => { console.log(res) });
+        //    scm.GetFoldersInFolder(res).then((res) => { console.log(res) });
+        //});
+
+
+    </script>
+
+</head>
+<body>
+
+
+    <div id='mocha'></div>
+    <div id='app'></div>
+    <script>
+        var authId= new URLSearchParams(window.location.search).get("id");
+    </script>
+    <script>mocha.setup('bdd')</script>
+    <script type="module" src="test/BrowserTests.js"></script>
+    
+
+    <script type="module">
+        mocha.timeout(10000);
+        mocha.checkLeaks();
+        mocha.globals(['jQuery']);
+        mocha.run();
+    </script>
+</body>
+</html>

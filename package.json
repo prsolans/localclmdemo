@@ -6,10 +6,10 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "@google-cloud/language": "^3.7.0",
+    "@google-cloud/language": "^3.8.0",
     "blob": "0.0.5",
-    "box-node-sdk": "^1.30.0",
-    "cookie-parser": "^1.4.4",
+    "box-node-sdk": "^1.31.0",
+    "cookie-parser": "^1.4.5",
     "dateformat": "^3.0.3",
     "debug": "~2.6.9",
     "express": "^4.17.1",

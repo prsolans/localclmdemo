@@ -5,30 +5,21 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var homeRouter = require('./routes/home');
-var inputRouter = require('./routes/input');
-var metadataRouter = require('./routes/metadata');
 var vendorRouter = require('./routes/vendor');
 var allVendorsRouter = require('./routes/all_vendors');
 
-var hydraterRouter = require('./routes/hydrater');
-
-var api_testRouter = require('./routes/api/test');
+var api_summarizerRouter = require('./routes/api/summarizer');
 
 
 var app = express();
 
 /////////////////////
 // UPDATE HERE
+app.locals.auth_URL = 'https://auth.springcm.com/api/v201606/apiuser'
 
 app.locals.client_id = '8c2c1048-25b6-403b-b82b-324910667375';
 app.locals.client_secret = '7e4e160011b24c348273547014a0bbff4W7LfCO5jRD2MpJsfB6UP8ReTps6yeTLgqFmbXeOVmnAm0bc4wZnTcH05hjB52ZgT5qykboAcUhkMIOetkd6vWlmzpIWHMk3';
-app.locals.auth_URL = 'https://auth.springcm.com/api/v201606/apiuser'
-// app.locals.root_folder_id = 'a8c44e6d-0036-ea11-9c2b-d89d6716196d';
-app.locals.root_folder_id = '6bb169a7-303e-ea11-9c2b-d89d6716196d'; // Ivy Tech
-app.locals.hydrater_doc_id = 'b4d8e1c5-303e-ea11-9c2b-d89d6716196d';
-
-app.locals.GOOGLE_APPLICATION_CREDENTIALS = 'CLM NLP 1-c8a4eb6906d4.json';
+app.locals.root_folder_id = 'af212d6b-cc4d-ea11-9c2d-d89d6716196d'; // Procurement/Contracts
 
 /////////////////////
 
@@ -43,15 +34,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/home', homeRouter);
-app.use('/input', inputRouter);
 app.use('/vendor', vendorRouter);
 app.use('/vendors', allVendorsRouter);
-app.use('/metadata', metadataRouter);
 
-app.use('/hydrater', hydraterRouter);
-
-app.use('/api/test', api_testRouter);
+app.use('/api/summarizer', api_summarizerRouter);
 
 
 app.use(function fileLog(req, res, next) {

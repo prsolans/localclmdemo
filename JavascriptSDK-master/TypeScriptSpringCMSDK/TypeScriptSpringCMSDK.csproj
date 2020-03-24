@@ -1,0 +1,175 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\js\**" />
+    <Content Remove="wwwroot\js\**" />
+    <EmbeddedResource Remove="wwwroot\js\**" />
+    <None Remove="wwwroot\js\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\SDK\Authentication\APIUserAuthentication.ts" />
+    <Content Remove="wwwroot\SDK\Authentication\IAuthentication.ts" />
+    <Content Remove="wwwroot\SDK\Authentication\StaticTokenAuthentication.ts" />
+    <Content Remove="wwwroot\SDK\Model\AttributeGroup.ts" />
+    <Content Remove="wwwroot\SDK\Model\Attributes.ts" />
+    <Content Remove="wwwroot\SDK\Model\Contacts.ts" />
+    <Content Remove="wwwroot\SDK\Model\CurrentUser.ts" />
+    <Content Remove="wwwroot\SDK\Model\DocLauncher.ts" />
+    <Content Remove="wwwroot\SDK\Model\DocLauncherTask.ts" />
+    <Content Remove="wwwroot\SDK\Model\DocumentReminder.ts" />
+    <Content Remove="wwwroot\SDK\Model\DocumentSearch.ts" />
+    <Content Remove="wwwroot\SDK\Model\ExternalReviewTask.ts" />
+    <Content Remove="wwwroot\SDK\Model\FolderArchiveTask.ts" />
+    <Content Remove="wwwroot\SDK\Model\FolderSearchTask.ts" />
+    <Content Remove="wwwroot\SDK\Model\PagingRequest.ts" />
+    <Content Remove="wwwroot\SDK\Model\PermissionSet.ts" />
+    <Content Remove="wwwroot\SDK\Model\shareLink.ts" />
+    <Content Remove="wwwroot\SDK\Model\SignatureTask.ts" />
+    <Content Remove="wwwroot\SDK\Model\SplitDocumentTask.ts" />
+    <Content Remove="wwwroot\SDK\Model\SpringCMItem.ts" />
+    <Content Remove="wwwroot\SDK\Model\Token.ts" />
+    <Content Remove="wwwroot\SDK\Model\Workflow.ts" />
+    <Content Remove="wwwroot\SDK\Model\WorkflowQueue.ts" />
+    <Content Remove="wwwroot\SDK\Model\WorkItem.ts" />
+    <Content Remove="wwwroot\SDK\Requests\DocumentRequest.ts" />
+    <Content Remove="wwwroot\SDK\Requests\FolderRequest.ts" />
+    <Content Remove="wwwroot\SDK\Requests\ISingleReques.ts" />
+    <Content Remove="wwwroot\SDK\Service\BrowserRequestFactory.ts" />
+    <Content Remove="wwwroot\SDK\Service\BrowserSpringCMService.ts" />
+    <Content Remove="wwwroot\SDK\Service\IHttpRequest.d.ts" />
+    <Content Remove="wwwroot\SDK\Service\NodeHttpRequest.ts" />
+    <Content Remove="wwwroot\SDK\Service\NodeSpringCMService.ts" />
+    <Content Remove="wwwroot\SDK\Service\RequestorFactory.ts" />
+    <Content Remove="wwwroot\SDK\Service\validator.ts" />
+    <Content Remove="wwwroot\test\BrowserTests.ts" />
+    <Content Remove="wwwroot\test\NodeTests.ts" />
+    <Content Remove="wwwroot\test\secrets.js" />
+    <Content Remove="wwwroot\test\secrets.js.map" />
+    <Content Remove="wwwroot\test\SpringCMSDK.bundle.js" />
+    <Content Remove="wwwroot\test\SpringCMSDK.bundle.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="secrets.ts" />
+    <None Remove="wwwroot\SDK\Model\AccessLevel.ts" />
+    <None Remove="wwwroot\SDK\Model\Document.ts" />
+    <None Remove="wwwroot\SDK\Model\EosInfo.ts" />
+    <None Remove="wwwroot\SDK\Model\HistoryItems.ts" />
+    <None Remove="wwwroot\SDK\Model\Lock.ts" />
+    <None Remove="wwwroot\SDK\Model\Security.ts" />
+    <None Remove="wwwroot\SDK\Model\User.ts" />
+    <None Remove="wwwroot\SDK\Model\UserActions.ts" />
+    <None Remove="wwwroot\SDK\Service\SpringCMService.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Xpo" Version="18.1.9" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.TypeScript.Compiler" Version="2.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\SDK\Authentication\ApiUserAuthentication.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Authentication\IAuthentication.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Authentication\StaticTokenAuthentication.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\AccessLevel.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\AttributeGroup.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Attributes.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Contacts.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\CurrentUser.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\DocLauncher.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\DocLauncherTask.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Document.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\DocumentProcessTrackingActivity.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\DocumentReminder.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\DocumentSearch.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\EosInfo.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\ExternalReviewTask.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\FolderArchiveTask.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\FolderSearchTask.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\ShareLink.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\HistoryItems.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Lock.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\PagingRequest.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\PermissionSet.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Security.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\SignatureTask.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\SplitDocumentTask.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\SpringCMItem.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Token.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\User.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\UserActions.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\Workflow.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\WorkflowQueue.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Model\WorkItem.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Requests\DocumentRequest.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Requests\FolderRequest.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Requests\ISingleReques.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\BrowserRequestFactory.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\NodeSpringCMService.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\BrowserSpringCMService.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\validator.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\RequestorFactory.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\NodeHttpRequest.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\IHttpRequest.d.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\BrowserHttpRequest.ts" />
+    <TypeScriptCompile Include="wwwroot\SDK\Service\SpringCMService.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="NewFolder\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\SDK\Model\AccessLevel.js" />
+    <None Include="wwwroot\SDK\Model\AccessLevel.js.map" />
+    <None Include="wwwroot\SDK\Model\Document.js" />
+    <None Include="wwwroot\SDK\Model\Document.js.map" />
+    <None Include="wwwroot\SDK\Model\DocumentProcessTrackingActivities.js" />
+    <None Include="wwwroot\SDK\Model\DocumentProcessTrackingActivities.js.map" />
+    <None Include="wwwroot\SDK\Model\EosInfo.js" />
+    <None Include="wwwroot\SDK\Model\EosInfo.js.map" />
+    <None Include="wwwroot\SDK\Model\Folder.d.ts" />
+    <None Include="wwwroot\SDK\Model\HistoryItems.js" />
+    <None Include="wwwroot\SDK\Model\HistoryItems.js.map" />
+    <None Include="wwwroot\SDK\Model\Lock.js" />
+    <None Include="wwwroot\SDK\Model\Lock.js.map" />
+    <None Include="wwwroot\SDK\Model\Security.js" />
+    <None Include="wwwroot\SDK\Model\Security.js.map" />
+    <None Include="wwwroot\SDK\Model\User.js" />
+    <None Include="wwwroot\SDK\Model\User.js.map" />
+    <None Include="wwwroot\SDK\Model\UserActions.js" />
+    <None Include="wwwroot\SDK\Model\UserActions.js.map" />
+    <None Include="wwwroot\SDK\Service\SpringCMService.js" />
+    <None Include="wwwroot\SDK\Service\SpringCMService.js.map" />
+    <None Include="wwwroot\test\secrets.js" />
+    <None Include="wwwroot\test\secrets.js.map" />
+    <None Include="wwwroot\test\SpringCMSDK.bundle.js" />
+    <None Include="wwwroot\test\SpringCMSDK.bundle.js.map" />
+    <TypeScriptCompile Include="wwwroot\test\BrowserTests.ts" />
+    <TypeScriptCompile Include="wwwroot\test\NodeTests.ts" />
+    <TypeScriptCompile Include="wwwroot\test\secrets.ts" />
+    <None Include="wwwroot\test\test.js" />
+    <None Include="wwwroot\test\test.js.map" />
+    <None Include="wwwroot\test\test.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\SDK\Service\NodeSpringCMService.js">
+      <DependentUpon>NodeSpringCMService.ts</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\SDK\Service\NodeSpringCMService.js.map">
+      <DependentUpon>NodeSpringCMService.js</DependentUpon>
+    </Content>
+    <Content Update="wwwroot\test\BrowserTests.js">
+      <DependentUpon>BrowserTests.ts</DependentUpon>
+    </Content>
+  </ItemGroup>
+
+</Project>

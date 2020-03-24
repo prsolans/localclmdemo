@@ -60,6 +60,12 @@ h1, h2, h3 {
   color: #151f26;
 }
 
+h1.header {
+  display: inline;
+  vertical-align: middle;
+  padding: 15px;
+}
+
 h2.light {
   color: #999;
 }

@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div.row.main
+    div.col-lg-12.col-sm-12
+      div.bs-callout.bs-callout-info
+        h1.light #{user_data.FirstName} #{user_data.LastName}
+        h5 #{user_data.Email}
+
+        p You are accessing this application using an API User connected to #{account_data.Name} (#{account_data.Id})
+
+        p
+          a(href='vendors' target='_blank') See your root folder
+
+
+
+
+
+

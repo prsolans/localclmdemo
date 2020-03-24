@@ -87,8 +87,11 @@ router.get('/', function(req, res, next) {
         // now do something with resp
         auth_token = json.access_token;
 
+
         getRootFolder(auth_token, function () {
             root_folder_data  = JSON.parse(this.responseText);
+
+            console.log(root_folder_data);
 
             var root_folder_folders_link = root_folder_data.Folders.Href;
 
