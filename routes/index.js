@@ -81,7 +81,6 @@ router.get('/', function(req, res, next) {
 
             getAccountData(auth_token, user_data, function() {
                 var account_data  = JSON.parse(this.responseText);
-                console.log(account_data);
                 res.render('index', {user_data: user_data, account_data: account_data});
             })
         });
