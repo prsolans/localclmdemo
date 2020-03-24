@@ -24,7 +24,7 @@ IMPORTANT: This framework is intended solely for local testing and demonstration
 #### Using Git From Terminal ####
 1. Go to Terminal
 2. Go to a parent folder of your choice
-3. Clone from Git: `git clone https://github.com/prsolans/box-base-demo.git localclmdemo`
+3. Clone from Git: `git clone https://github.com/prsolans/localclmdemo localclmdemo`
 
 ### Step 2: Build your environment
 You need some stuff to make this run. Here's how to do it.
