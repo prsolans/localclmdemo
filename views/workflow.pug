@@ -2,20 +2,20 @@ extends layout
 
 block content
   div.row.main
-    div.col-lg-3.col-sm-12
-      div.bs-callout.bs-callout-info
-        h1.light Submit a form
-
-    div.form-container.col-lg-9.col-sm-12
+    div.col-lg-4.col-sm-12
+      h1.light Trigger a process
       form(name="add-estimation", method="post", enctype="application/x-www-form-urlencoded")
-              div.input
-                  span.label Title
-                  input(type="text", name="title")
-              div.input
-                  span.label Description
-                  textarea(name="description", cols="40", rows="5")
-              div.actions
-                  input(type="submit", value="Submit")
+        div.input
+            span.label Title
+            input(type="text", name="title")
+        div.input
+            span.label Description
+            textarea(name="description", cols="40", rows="5")
+        div.input
+            span.label &nbsp;
+            input(type="submit", value="Submit")
+    div.col-lg-8.col-sm-12
+        iframe.document(width='100%', height='600', src=document)
 
 
 

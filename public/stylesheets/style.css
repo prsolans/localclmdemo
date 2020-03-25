@@ -40,10 +40,6 @@ footer.footer h5 {
   float:right;
 }
 
-div.left-column {
-  /*border-right: 1px solid #333;*/
-}
-
 a {
   /* EDIT ME:
   // The color of the links on the pages... not a big deal.
@@ -238,11 +234,22 @@ img.right {
   float: right;
 }
 
-span.label {
-  width: 150px;
-  display: inline-block;
+div.form-container {
+  /* border: 1px solid blue; */
+  margin: 25px 0 0 25px;
 }
 
-div.form-container {
-  border: 1px solid blue;
+div.form-container input {
+  margin-bottom: 10px;
+}
+
+div.form-container span.label {
+  font-weight: bold;
+  width: 150px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+div.full-width {
+  padding: 0;
 }

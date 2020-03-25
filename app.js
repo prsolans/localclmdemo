@@ -30,7 +30,8 @@ app.locals.auth_URL = 'https://auth.springcm.com/api/v201606/apiuser'
 
 app.locals.client_id = '8c2c1048-25b6-403b-b82b-324910667375';
 app.locals.client_secret = '7e4e160011b24c348273547014a0bbff4W7LfCO5jRD2MpJsfB6UP8ReTps6yeTLgqFmbXeOVmnAm0bc4wZnTcH05hjB52ZgT5qykboAcUhkMIOetkd6vWlmzpIWHMk3';
-app.locals.root_folder_id = 'af212d6b-cc4d-ea11-9c2d-d89d6716196d'; // Procurement/Contracts
+app.locals.root_folder_id = 'a8f48b88-4f6e-ea11-9c2d-d89d6716196d'; // Procurement/Contracts
+app.locals.workflow_folder_id = 'fa34ea89-bd6e-ea11-9c2d-d89d6716196d'; // DCD/Local CLM Demo
 
 /////////////////////
 

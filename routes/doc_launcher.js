@@ -58,7 +58,7 @@ router.get('/', function (req, res, next) {
         var json = JSON.parse(this.responseText);
         auth_token = json.access_token;
 
-        res.render('workflow');
+        res.render('doc_launcher');
 
     });
 });
