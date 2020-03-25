@@ -52,7 +52,7 @@ To make Box UI Elements work in your app, you will need to add a line to your ho
 NOTE: If you have trouble with saving this file, try the command `sudo nano /etc/hosts` to open the file. You may need to enter your computer password along the way, as this is a system file on your computer.
 
 2. Copy/paste: `127.0.0.1 localclmdemo.com`
-3. Back in the Box Developer Console, go to the Configuration page and copy the following into the box Allowed Origins box under CORS Domain: `http://localclmdemo.com:3000`
+
 
 NOTE: We are using 'localclmdemo.com' for this demo, but you can replace this with whatever domain you'd like.
 
