@@ -6,8 +6,16 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+
+// Vendor Contract View
 var vendorRouter = require('./routes/vendor');
 var allVendorsRouter = require('./routes/all_vendors');
+
+// Workflow Kickoff View
+var workflowRouter = require('./routes/workflow');
+
+// Embedded Doc Launcher
+var docLauncherRouter = require('./routes/doc_launcher');
 
 var api_summarizerRouter = require('./routes/api/summarizer');
 
@@ -39,6 +47,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/vendor', vendorRouter);
 app.use('/vendors', allVendorsRouter);
+app.use('/workflow', workflowRouter);
+app.use('/doc_launcher', docLauncherRouter);
+
 
 app.use('/api/summarizer', api_summarizerRouter);
 

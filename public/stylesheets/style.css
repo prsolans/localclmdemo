@@ -237,3 +237,12 @@ img.logo {
 img.right {
   float: right;
 }
+
+span.label {
+  width: 150px;
+  display: inline-block;
+}
+
+div.form-container {
+  border: 1px solid blue;
+}

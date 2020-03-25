@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  div.row.main
+    div.col-lg-3.col-sm-12
+      div.bs-callout.bs-callout-info
+        h1.light Submit a form
+
+    div.form-container.col-lg-9.col-sm-12
+      form(name="add-estimation", method="post", enctype="application/x-www-form-urlencoded")
+              div.input
+                  span.label Title
+                  input(type="text", name="title")
+              div.input
+                  span.label Description
+                  textarea(name="description", cols="40", rows="5")
+              div.actions
+                  input(type="submit", value="Submit")
+
+
+
+
+
+
+

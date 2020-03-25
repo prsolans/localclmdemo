@@ -6,5 +6,9 @@ $(document).ready(function(){
     console.log(preview_url);
     $(".document").attr('src', preview_url);
   });
+
+  $("div.form-container").on("submit", function() {
+    console.log('submitted');
+  });
 });
 
