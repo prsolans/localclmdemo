@@ -165,8 +165,8 @@ div.left-align {
 }
 
 .bs-callout {
-    padding: 15px;
-    margin: 20px 0;
+    padding: 3px 15px;
+    margin: 0;
     border: 1px solid #eee;
     border-radius: 3px;
 }

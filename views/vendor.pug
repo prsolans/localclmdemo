@@ -2,7 +2,7 @@ extends layout
 
 block content
   div.row.main
-    div.col-lg-12.col-sm-12
+    div.col-lg-4.col-sm-12
       div.bs-callout.bs-callout-info
         h1.light #{vendor_name}
 
@@ -10,9 +10,11 @@ block content
         ul
           each doc in agreements
             li
-              a(href=doc.PreviewUrl target='_blank') #{doc.Name}
+              //- a(href=doc.PreviewUrl class='load_doc') #{doc.Name}
+              a(href='#' class='load_doc' data-url=doc.PreviewUrl) #{doc.Name}
 
-
+    div.col-lg-8.col-sm-12
+      iframe.document(width='100%', height='600', src='https://na11.springcm.com/atlas/documents/docexplorer?aid=20873&id=d911bb1a-cd4d-ea11-9c2d-d89d6716196d')
 
 
 
