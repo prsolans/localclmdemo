@@ -116,8 +116,6 @@ router.get('/:id', function(req, res, renderPage) {
                 var json = JSON.parse(this.responseText);
                 agreements = json.Items;
                 agreement_count = agreements.length;
-                console.log('AC: ' + agreement_count);
-
                 res.render('vendor');
             });
         });

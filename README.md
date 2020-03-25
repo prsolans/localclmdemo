@@ -56,19 +56,24 @@ NOTE: If you have trouble with saving this file, try the command `sudo nano /etc
 
 NOTE: We are using 'localclmdemo.com' for this demo, but you can replace this with whatever domain you'd like.
 
-### Step 6: Run the application
+### Step 6: Configure your CLM account
+You need to add some Admin configurations to allow certain API activity to flow into your custom domain
+1. In Admin->Integrations->API Settings, add `localclmdemo.com` under *Permitted Domains*
+2. In Admin->Account Management->Security Settings, add `localclmdemo.com` under *Clickjack Protection/Allowed Domains*
+
+### Step 7: Run the application
 To get this application fired up, you will need to use Terminal.
 1. From Terminal, navigate to the folder where the application is located
 2. Run the app
       Copy/paste: `npm start`
 3. Navigate to http://localclmdemo.com:3000 in your browser to see the application.
 
-### Step 7: Customize the application
+### Step 8: Customize the application
 You can update the branding and the colors
 1. Update logo - Replace the file at /localclmdemo/public/images/logo.png
 2. Set colors - Edit the file at /localclmdemo/public/stylesheets/style.css (Look for EDIT ME)
 
-### Step 8: Telling the story
+### Step 9: Telling the story
 You should now have a working and branded app.
 1. You can find the text in the /localclmdemo/views folder. You can adjust any language and links here to help tell your story
 
