@@ -46,7 +46,6 @@ TODO: Add instructions here
 * root_folder_id - This is the ID of the folder you want to display as a Content Explorer in the app
 
 ### Step 5: Amend your hosts file
-To make Box UI Elements work in your app, you will need to add a line to your hosts file
 1. Open your hosts file (assumes Mac) from terminal `open /etc/hosts`
 
 NOTE: If you have trouble with saving this file, try the command `sudo nano /etc/hosts` to open the file. You may need to enter your computer password along the way, as this is a system file on your computer.
