@@ -77,4 +77,4 @@ You can update the branding and the colors
 You should now have a working and branded app.
 1. You can find the text in the /localclmdemo/views folder. You can adjust any language and links here to help tell your story
 
-If you get this far and need help, please reach out to me (Paul R. Solans - prs@box.com).
+If you get this far and need help, please reach out to me (Paul R. Solans - paul.solans@docusign.com).
