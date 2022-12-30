@@ -14,7 +14,7 @@
     "babel-register": "^6.26.0",
     "chai": "^4.2.0",
     "enhanced-resolve": "4.1.0",
-    "mocha": "6.1.4",
+    "mocha": "10.2.0",
     "ts-node": "8.1.0",
     "typescript": "^2.7.2",
     "uglifyjs-webpack-plugin": "1.1.2",
